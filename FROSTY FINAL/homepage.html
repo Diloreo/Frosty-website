@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="homepagecss.css">
+        <link rel="stylesheet" href="headercss.css">
+        <link rel="stylesheet" href="footercss.css">
+		<script type="text/javascript">
+			if (localStorage.getItem("cookieSeen") != "shown") {
+  $(".cookie-banner").delay(2000).fadeIn();
+  localStorage.setItem("cookieSeen","shown")
+};
+$(".close").click(function() {
+  $(".cookie-banner").fadeOut();
+})
+		</script>
+    </head>
+<body>
+<!--header-->
+<div id="all">
+<div id="head">
+    <header>
+        <a href="homepage.html"> <img id="hlogo" src="logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li><li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <a class="crt" href="cartty.html"><button id="btn1">Cart</button></a>
+    </header>
+</div>
+<!--body-->
+<div id="main">
+    <table id="logtxt">
+        <tr><img id="logo" src="logo.png" alt="logo"></tr>
+        <tr><p id="intro">Frosty® brand was invented by three sri lankan entrepreneurs with a vision.<br>
+            They used their creativity, sense of playfulness, and a totally
+            made-up name to create an iconic luxury brand.<br>
+            By transforming the finest ingredients into rich and indulgent ice cream,
+            they created the first luxury ice cream that could be enjoyed by all.</p></tr>
+            <tr><a id="shop" href="shop.html"><button>Shop</button><a id="aus" href="about.html"><button>About Us</button></a></a></tr>
+    </table>
+</div>
+<!--footer-->
+<div class="foot">
+	<div class="footer">
+    <div class="footer-content">
+        
+        <img id="flogo" src="logo.png" alt="logo">
+                <p id="fpara">Premium Ice Cream and supplies.</p>
+                <p id="fcon">Contact:+94 112 345 345 <br>Email: frosty@gmail.com</p>
+    
+    <div class="footer-bottom">
+        &copy; frosty.com
+    </div>
+</div>
+</div>
+<div id="slogos">
+    <a href="#"><img id="slogo" src="icons8_facebook_52px.png" alt="fb"></a>
+    <a href="#"><img id="slogo" src="icons8_instagram_logo_52px.png" alt="ins"></a>
+    <a href="#"><img id="slogo" src="icons8_linkedin_48px.png" alt="linkd"></a>
+</div>
+	</div>
+	<div class="cookie-banner" style="display: none">
+<p>
+    By using our website, you agree to our 
+    <a href="Privacy policy.html">cookie policy</a>
+  </p>
+<button class="close">&times;</button>
+</div>
+</body>
+</html>

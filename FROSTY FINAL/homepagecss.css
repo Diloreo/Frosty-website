@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+body {
+    background-image: url("BG2.png");
+    background-size: auto;
+}
+
+#logo {
+ /* padding-top: 50px;  
+  padding-left: 560px;
+    width:360px;*/
+	padding-top: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 23%;
+}
+#intro {
+	width: 95%;
+	padding-top: 2%;
+	padding-left: 4%;
+    position: absolute;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    display: flex;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+button {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 9px 30px;
+    background-color: rgb(226, 93, 69);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: #FFFFFF;
+}
+
+button:hover {
+    color: thistle;
+    background-color: rgb(170, 64, 46);
+}
+
+#aus{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+#shop{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+#all{
+    animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.cookie-banner {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+#div1
+{
+	background-color: black;
+	padding: 1%;
+}
+body
+{
+	color: white;
+	background-image: url("BG2.png");
+}
+table
+{
+	padding-left: 40%;
+	
+}
+#submitcheck
+{
+	background-color: #E25D44;
+	color: white;
+	width: 100px;
+	height: 50px;
+	margin-left: 47%;
+	margin-top: 3%;
+}
+#buttonbk
+{
+    padding: 1.5%;
+    margin-left: 2%;
+    background-color: #E25D44;
+	color: white;
+}
+button:hover
+{
+	background-color: lemonchiffon;
+	color: black;
+
+}
+#div3
+{
+	border-style: solid;
+	border-width: thin;
+	border-color: white;
+	width: 40%;
+	margin-left: 30%;
+}

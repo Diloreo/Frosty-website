@@ -1,0 +1,114 @@
+<html>
+<head>
+<script type="text/javascript" src="checkout.js"></script>
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+<div id="div1">
+<p>
+        <h1 align="center">CHECKOUT</h1>      
+</p>
+</div>
+<a href="cartty.html"><button id="buttonbk">Go Back</button></a>
+<br>
+<br>
+<div id="div2">
+<form method="POST" action="checkout.php" name="form1">
+	<table border="0">
+        <tr>
+        	<td colspan="2"><h2 align=center>Basic Information</h2></td>
+
+        </tr>
+        <tr>
+        	<td>First Name</td>
+        	<td><input type="textbox" name="fname"></td>
+        </tr>
+        <tr>
+        	 <td>Last Name</td>
+        	 <td><input type="textbox" name="lname"></td>
+        </tr>
+        <tr>
+                <td>Email </td>
+                <td><input type="email" name="Email"></td>
+        </tr>
+        <tr>
+                 <td>Contact number</td>
+                 <td><input type="textbox" name="contactno"></td>
+         </tr>
+        <tr>
+        	<td>Delivery Address</td>
+        	<td><input type="textbox" name="address"></td>
+        </tr>
+        <tr>
+        	 <td>Town</td>
+        	 <td><input type="textbox" name="town"></td>
+        </tr>
+        <tr>
+        	<td>District</td>
+        	<td><input type="textbox" name="dist"></td>
+        </tr>
+        <tr>
+        	<td>Postal Code</td>
+        	<td><input type="textbox" name="pc"></td>
+        </tr>
+        <tr>
+        	<td><br></td>
+        </tr>
+        <tr>
+        	<td colspan="2" align=center><h2>Payment Information</h2></td>
+        </tr>
+         <tr>
+        	<td>Name of card</td>
+        	<td><input type="textbox" name="cardname"></td>
+        </tr>
+        <tr>
+        	<td>Credit Card Number</td>
+        	<td><input type="textbox" name="ccn"></td>
+        </tr>
+        <tr>
+        	<td>Expiration month</td>
+        	<td><input type="textbox" name="expmon"></td>
+        </tr>
+        <tr>
+        	<td>Expiration year</td>
+        	<td><input type="textbox" name="expyr"></td>
+        </tr>
+        <tr>
+        	<td>CVV</td>
+        	<td><input type="textbox" name="cvv"></td>
+        </tr>
+
+	</table>
+        <div id="div4"><input type="submit" value="SUBMIT" onclick="validation()"; align="left" id="submitcheck"></div>
+</form>
+</div>
+
+
+<div id="div3">
+        <h1 align="center">Order Summary</h1>
+	<?php 
+         
+               $Servername="localhost";
+               $Username="root";
+               $Password="";
+               $Database="customerdetails";
+
+               $con=musqli_connect($Servername,$Username,$Password,$Database);
+               $usedb="USE customerdetails;";
+               mysqli_query($con,$usedb);
+
+               $select="SELECT * FROM orderdetails FETCH FIRST 5 ROWS ONLY;";
+               $result=mysqli_query($con,$selection);
+
+               while($line=mysqli_fetch_assoc($result))
+               {
+                echo .line['productname'];
+                echo .line['productprice'];
+                echo .line['quantity'];
+                echo .line['type'];
+               }
+               mysqli_close($con);
+         ?>
+</div>
+</body>
+</html>

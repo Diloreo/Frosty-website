@@ -1,0 +1,8 @@
+
+<?php
+if(isset($_POST['O_ID']))
+{
+     $command = "DELETE FROM order WHERE id= ".$_POST['O_ID'].";
+     mysqli_query($conn,$command);
+}
+?>

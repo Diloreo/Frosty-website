@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+body {
+    background-image: url("BG2.png");
+    background-size: auto;
+	font-family: "Montserrat", sans-serif;
+	color: whitesmoke;
+}
+.container{
+max-width:1200px;
+margin:0 auto;
+}
+.container>h1{
+padding:20px 0;
+}
+.cart{
+display:flex;
+}
+.product{
+display:flex;
+width:800px;
+height:250px;
+overflow:hidden;
+border:1px solid silver;
+margin-bottom:20px;
+}
+.product:hover{
+border:none;
+box-shadow:2px 2px 4px;
+transform:scale(1.01);
+}
+.product>img{
+width:300px;
+height:200px;
+object-fit:cover;
+}
+.product>img:hover{
+transform:scale(1.04);
+}
+.product-info{
+padding:20px;
+position:relative;
+}
+.product-name,.product-price,.product-offer{
+margin-bottom:20px;
+}
+.product-remove{
+position:absolute;
+bottom:20px;
+left:100%;
+padding:10px 25px;
+background-color:#e75480;
+color:black;
+cursor:pointer;
+border-radius:0;
+}
+.product-remove:hover{
+background-color:#90EE90;
+color:green;
+font-weight:600;
+border:1px solid green;
+}
+.product-quantity>input{
+width:40px;
+padding:5px;
+text-align:center;
+}
+.cart-total{
+flex:0.25;
+margin-left:20px;
+padding:20px;
+height:240px;
+border:1px solid silver;
+border-radius:5px;
+}
+.cart-total p{
+display:flex;
+justify-content:space-between;
+margin-bottom:30px;
+font-size:20px;
+}
+.cart-total a{
+display:block;
+text-align:center;
+height:40px;
+line-height:40px;
+background-color:#FF6347;
+color:white;
+text-decoration:none;
+}
+
+#btn1{
+	border-radius: 50px;
+	background-color: rgb(226, 93, 69);
+	border: none;
+	padding: 9px 30px;
+	cursor: pointer;
+    transition: all 0.3 ease 0s;
+	
+}
+
+#all{
+    animation: fadeIn 1s;
+  webkit-animation: fadeIn 1s;
+  moz-animation: fadeIn 1s;
+  o-animation: fadeIn 1s;
+  ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

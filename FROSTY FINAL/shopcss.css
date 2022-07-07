@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+body {
+    background-image: url("BG2.png");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+html 
+{
+     scroll-behavior: smooth;
+}
+td
+{
+      
+      margin: 2%;
+      border-style: solid;
+      border-color: rgba(245, 245, 245, 0.452);
+	  border-radius: 20px;
+      font-size: 18;
+      width: 5%;
+      height: 10%;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+}    
+
+table
+{
+     background: rgba(255, 228, 228, 0.082);
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+     backdrop-filter: blur(11px);
+     border-radius: 15px;
+     padding-right: 5%;
+     padding-left: 5%;
+     padding-bottom: 5%;
+     width:80%;
+     height:80% ;
+
+}
+
+#de
+{
+     background-color:black;
+     color:white;
+     font-size: 25;
+     font-weight: bold;
+     text-align: center;
+}
+#topp
+{
+     background: rgba(34, 34, 34, 0.26);
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+     backdrop-filter: blur(11px);
+     border-radius: 15px;
+     color: whitesmoke;
+     font-family: "Montserrat", sans-serif;
+     font-size: 50;
+     font-weight: bold;
+}
+.name
+{
+    font-size: 30;
+    color: white;
+    font-weight: bold;
+}
+.price
+{
+  color: white;  
+  font-size: 23;
+}
+.submit
+{
+   background-color: rgb(228, 85, 28);
+   color: white;
+   width:30%;
+   padding: 2%;
+   border-radius: 50px;
+   border: none;
+   font-weight: bold;
+
+}
+
+
+/* Slideshow container */
+.slideshow-container 
+{
+     max-width: 90%;
+     height: 40%;
+     border-radius: 40%;
+     position: relative;
+     margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides 
+{
+  display: none;
+  border-radius: 40%;
+}
+
+/* Next & previous buttons */
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+  background-color: lemonchiffon;
+}
+
+.text 
+{
+  background: rgba(34, 34, 34, 0.26);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(11px);
+  color: whitesmoke;
+  font-size:70 ;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  position:absolute;
+  bottom: 34%;
+  height: 30%;
+  width: 100%;
+  text-align:center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext
+{
+  color: whitesmoke;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ 
+ .submit:hover
+ {
+    background-color: rgb(158, 45, 0);
+    color: whitesmoke;
+    border: none;
+ }
+#flv
+ {
+   padding-top: 10px;
+	width: 130px;
+    height: 130px;
+    border-radius: 50px;
+ }
+
+ form{
+   color: whitesmoke;
+ }
+
+ #imgsl{
+  padding-top: 5px; 
+  border-radius: 40px;
+ }
+#btn1{
+	border-radius: 50px;
+	background-color: rgb(226, 93, 69);
+	border: none;
+	padding: 9px 30px;
+	cursor: pointer;
+    transition: all 0.3 ease 0s;
+	
+}
+select{
+	border-radius: 5px;
+	font-family: "Montserrat", sans-serif;
+}
+ 
+
+.footer{
+    background: rgba(61, 61, 61, 0.616);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(11px);
+    color:#d3d3d3;
+    height: 70px;
+    width: 100%;
+    /*position: fixed;*/
+	bottom: 0px;
+    left: 0px;
+	
+}
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    font-size: 9px;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+	top:60px;
+    
+}
+
+.footer .footer-content{
+    height: 60px;
+    display: flex;
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#flogo{
+    height: 40px;
+    width: 40px;
+    bottom: 15px;
+    left: 2%;
+    position: fixed;
+}
+
+#fpara{
+    bottom: 5px;
+    left: 6%;
+    position: fixed;
+    font-size: 20px;
+}
+#fcon{
+    bottom: 6px;
+    left: 44%;
+    position: fixed;
+    font-size: 14px; 
+}
+#slogo{
+    height: 20px;
+    width: 20px;
+}
+#slogos{
+    bottom: 46px;
+    padding-left: 1420px;
+    position: relative;
+}
